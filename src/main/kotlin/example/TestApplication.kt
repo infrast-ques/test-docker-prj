@@ -1,10 +1,10 @@
-package controller
+package example
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
-@SpringBootApplication
-class TestApplication
+@SpringBootApplication(scanBasePackages = ["example.test"])
+open class TestApplication
 
 fun main(args: Array<String>) {
     runApplication<TestApplication>(*args)

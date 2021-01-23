@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS items
+(
+    id    BIGSERIAL PRIMARY KEY,
+    text  VARCHAR(255) NOT NULL,
+    viewed INTEGER NOT NULL
+);
+
