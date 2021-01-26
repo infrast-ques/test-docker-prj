@@ -10,3 +10,7 @@ docker build infrast/pg:v1 .
 docker run -it -d -p 5432:5432 --name postgres --network my_net infrast/pg:v1
 
 docker run -it -d -p 8080:8080 --name app --network my_net infrast/spring_app:v3
+
+or 
+
+docker-compose up
